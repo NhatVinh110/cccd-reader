@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "next-build": "next build --experimental-minify",
     "start": "next start",
     "lint": "eslint"
   },

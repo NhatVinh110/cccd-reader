@@ -47,7 +47,9 @@ export async function GET(request: Request) {
   const conn = await pool.getConnection();
 
   try {
-    const [rows] = await conn.execute('SELECT ten, mst FROM tracuu_logs WHERE cccd = ? LIMIT 1', [cccd]);
+    const [rows] = await conn.execute<mysql.RowDataPacket[]>( 
+  'SELECT ten, mst FROM tracuu_logs WHERE cccd = ? LIMIT 1', 
+  [cccd]);
     let ten = '';
     let mst = cccd;
 

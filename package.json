@@ -15,6 +15,7 @@
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "lucide-react": "^0.554.0",
+    "mongodb": "^7.0.0",
     "mysql2": "^3.15.3",
     "next": "16.0.7",
     "playwright": "^1.56.1",
@@ -35,6 +36,6 @@
     "typescript": "^5"
   },
   "resolutions": {
-      "next": "latest"
-    }
+    "next": "latest"
+  }
 }
